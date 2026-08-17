@@ -17,8 +17,25 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FA_VERSION: "7.3.1"
     steps:
       - uses: actions/checkout@v7
+
+
+      - name: Install fonts (Liberation Sans, Font Awesome)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-liberation unzip
+
+          curl -sSL -o fontawesome.zip \
+            "https://github.com/FortAwesome/Font-Awesome/releases/download/${FA_VERSION}/fontawesome-free-${FA_VERSION}-desktop.zip"
+          unzip -j fontawesome.zip -d fonts/fontawesome \
+            "fontawesome-free-${FA_VERSION}-desktop/otfs/*.otf"
+
+          mkdir -p ~/.local/share/fonts
+          cp fonts/fontawesome/*.otf ~/.local/share/fonts/
+          fc-cache -f
 
       - name: Setup Typst
         uses: typst-community/setup-typst@v5
