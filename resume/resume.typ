@@ -82,7 +82,7 @@
   details: [
     - Designed unified, platform-agnostic subscription model covering fulfillment and access-based types with distinct cancel/pause logic.
     - Overhauled observability: structured error grouping, reusable dashboards/SLOs, cross-team SRE processes; cut alert volume 80%.
-    - Modernized build system & local development setup:  streamlined linters, containerised deps, scripted setup, Bazel 6→8(WORKSPACE→MODULE.bazel); improved bootstrap time from days to hours.
+    - Modernized build system & local development setup:  streamlined linters, containerised deps, scripted setup, Bazel 6→8 (WORKSPACE→MODULE.bazel); improved bootstrap time from days to hours.
   ],
 )
 
@@ -102,11 +102,11 @@
   date: "Nov 2018 - Feb 2023",
   location: "Poznań, Poland",
   details: [
-    - Rebuilt event-pipeline core(7-8B events/day, consistent routing per-customer), cut infra costs ~40%, empowered data science to contribute directly.
-    - Improved event streaming throughput ~12%: optimised rate limiting and traffic-smoothing, improved Kinesis packing, rewrote backoff/retry.
-    - Introduced IaC: migrated CloudFormation to AWS CDK, adopted Terraform for PagerDuty config, reduced DevOps time needed for new services by ~50%.
-    - Offloaded pipeline decoding to Rust, halving its runtime (~8% of total pipeline time).
-    - Redesigned data layout of >1PB cold storage enabling targeted reindexing (minutes vs. hours), 90% warm-to-cold data pruning and cutting footprint ~23% (to ~770TB).
+    - Rebuilt event-pipeline core (7-8B events/day, consistent routing per-customer), cut infra costs \~40%, empowered data science to contribute directly.
+    - Improved event streaming throughput \~12%: optimised rate limiting and traffic-smoothing, improved Kinesis packing, rewrote backoff/retry.
+    - Introduced IaC: migrated CloudFormation to AWS CDK, adopted Terraform for PagerDuty config, reduced DevOps time needed for new services by \~50%.
+    - Offloaded pipeline decoding to Rust, halving its runtime (\~8% of total pipeline time).
+    - Redesigned data layout of >1PB cold storage enabling targeted reindexing (minutes vs. hours), 90% warm-to-cold data pruning and cutting footprint \~23% (to \~770TB).
   ],
 )
 
