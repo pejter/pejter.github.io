@@ -104,7 +104,7 @@
   details: [
     - Rebuilt event-pipeline core (7-8B events/day, consistent routing per-customer), cut infra costs \~40%, empowered data science to contribute directly.
     - Improved event streaming throughput \~12%: optimised rate limiting and traffic-smoothing, improved Kinesis packing, rewrote backoff/retry.
-    - Introduced IaC: migrated CloudFormation to AWS CDK, adopted Terraform for PagerDuty config, reduced DevOps time needed for new services by \~50%.
+    - Introduced IaC: migrated CloudFormation to AWS CDK, adopted Terraform for non-AWS resources (PagerDuty, etc.), reduced DevOps time needed for new services by \~50%.
     - Offloaded pipeline decoding to Rust, halving its runtime (\~8% of total pipeline time).
     - Redesigned data layout of >1PB cold storage enabling targeted reindexing (minutes vs. hours), 90% warm-to-cold data pruning and cutting footprint \~23% (to \~770TB).
   ],
