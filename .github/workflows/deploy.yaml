@@ -35,7 +35,7 @@ jobs:
         run: typst compile resume/resume.typ site/public/resume.pdf
 
       - name: Setup pnpm + node
-        uses: pnpm/setup@v2
+        uses: pnpm/setup@v3
         with:
           package-json-file: site/package.json
           install: false
