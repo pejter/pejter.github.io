@@ -143,3 +143,12 @@
   extra: "",
 )
 
+= Projects
+
+#exp(
+  title: "Homelab",
+  details: [
+    - I run my own homelab where I learn and practise Linux administration, Networking, DevOps, etc.
+  ],
+)
+
